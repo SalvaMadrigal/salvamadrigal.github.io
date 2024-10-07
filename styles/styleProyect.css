@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    background-image: url('../images/background_salva.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #1c1c1c;
+    font-family: "Manrope", sans-serif;
+    color: #fff;
+}
+
+nav {
+    width: 90%;
+    margin: 24px auto;
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 111111111;
+    top: 0;
+}
+
+.buttonNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+video{
+    width: 100%;
+}
+
+.circle {
+    width: 8px;
+    height: 8px;
+    background-color: #1c1c1c;
+    border-radius: 360px;
+}
+
+.buttonNav:hover .circle {
+    background-color: #246BFD;
+}
+
+header {
+    width: 96%;
+    margin: 64px auto 32px auto;
+}
+
+header h4 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+header h5 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #8E8E8E;
+}
+
+header h3 {
+    color: #fff;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.headerInfo {
+    display: flex;
+    gap: 128px;
+    justify-content: space-between;
+}
+
+.projectDescription {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.projectDescription p{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #8E8E8E;
+}
+
+.infoSalva {
+    width: 30%;
+    font-size: 16px;
+    line-height: 32px;
+    color: #8E8E8E;
+    display: flex;
+    gap: 8px;
+}
+
+.infoSalva,
+h1 h2 {
+    flex-direction: column;
+}
+
+.projectDouble {
+    width: 50%;
+}
+
+.projectSingle {
+    width: 100%;
+}
+
+.imagesDouble {
+    margin: 32px auto;
+    display: flex;
+    gap: 16px;
+}
+
+.imagesSingle {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.imagesDouble img,
+.imagesSingle img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+#projectDescription {
+    width: 96%;
+    margin: 0 auto;
+}
+
+#projectDescription h4 {
+    color: #fff;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+#projectDescription p {
+    color: #8E8E8E;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+.separator {
+    width: 96%;
+    margin: 32px auto;
+    height: 1px;
+    background-color: rgb(162, 162, 162, 0.10);
+}
+
+#columnsProject {
+    width: 96%;
+    margin: 0 auto 32px auto;
+    display: flex;
+    gap: 32px;
+}
+
+.columnInfo,
+.columnImg {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.columnInfo p {
+    font-size: 16px;
+    color: #8E8E8E;
+    line-height: 24px;
+}
+
+.columnInfo span {
+    color: #fff;
+}
+
+.columnInfo img {
+    max-width: 130px;
+    margin-bottom: 32px;
+}
+
+.columnImg img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+#images {
+    width: 96%;
+    margin: 0 auto;
+}
+
+.infoSocial {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    align-items: left;
+}
+
+
+.infoSocial a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 16px;
+    font-family: "Darker Grotesque", sans-serif;
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 300;
+}
+
+.buttonSocial {
+    transition: 0.7s;
+    overflow: hidden;
+}
+
+.buttonSocial a {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    margin-top: 3px;
+}
+
+.textSocial {
+    display: inline-block;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.buttonSocial:hover .textSocial {
+    animation: text 0.6s cubic-bezier(0, .7, .78, 1);
+}
+
+@keyframes text {
+    0% {
+        translate: 0 0;
+    }
+
+    50% {
+        translate: 0 -100%;
+    }
+
+    51% {
+        translate: 0 100%;
+    }
+
+    100% {
+        translate: 0 0;
+    }
+}
+
+#contact {
+    width: 96%;
+    margin: 64px auto;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+#contact p {
+    text-align: right;
+    margin: 32px 0 32px 0;
+}
+
+#contact h4 {
+    color: #8E8E8E;
+    margin-top: 124px;
+}
+
+.textSocial2 {
+    display: flex;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32px;
+    gap: 16px;
+    margin-top: 25px;
+}
+
+footer {
+    width: 96%;
+    margin: 0 auto;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32px;
+    text-transform: uppercase;
+    display: flex;
+    gap: 16px;
+    border-top: solid 1px rgb(162, 162, 162, 0.10);
+    padding: 16px 0;
+}
+
+.video {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        width: 90%;
+    }
+
+    header h5 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .headerInfo {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .projectDescription {
+        width: 100%;
+    }
+
+    .infoSalva {
+        width: 100%;
+        line-height: 24px;
+        gap: 0;
+    }
+
+    #images {
+        width: 90%;
+    }
+
+    .images {
+        flex-direction: column;
+    }
+
+    .projectSmall,
+    .projectMedium,
+    .projectBig {
+        width: 100%;
+    }
+
+    .separator {
+        width: 90%;
+        margin: 32px auto;
+    }
+
+    #projectDescription {
+        width: 90%;
+    }
+
+    #columnsProject {
+        width: 90%;
+        flex-direction: column-reverse;
+    }
+
+    .columnInfo,
+    .columnImg {
+        width: 100%;
+    }
+
+    .columnImg img {
+        height: auto;
+    }
+
+    .columnInfo img {
+        margin-bottom: 16px;
+    }
+
+    #contact {
+        width: 90%;
+        margin: 32px auto;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    #contact h4 {
+        margin-top: 64px;
+    }
+
+    .infoSocial {
+        flex-direction: column;
+    }
+
+    #contact p {
+        text-align: left;
+    }
+
+    footer {
+        width: 90%;
+    }
+
+    .imagesDouble {
+        flex-direction: column;
+    }
+
+    .projectDouble {
+        width: 100%;
+    }
+
+
+}

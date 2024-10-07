@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    background-image: url('../images/background_salva.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #1c1c1c;
+    font-family: "Manrope", sans-serif;
+    color: #fff;
+}
+
+nav {
+    width: 90%;
+    margin: 24px auto;
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 111111111;
+    top: 0;
+}
+
+.buttonNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.circle {
+    width: 8px;
+    height: 8px;
+    background-color: #1c1c1c;
+    border-radius: 360px;
+}
+
+.buttonNav:hover .circle {
+    background-color: #246BFD;
+}
+
+.intro {
+    width: 96%;
+    margin: 64px auto;
+}
+
+.infoSalva {
+    font-size: 24px;
+    line-height: 32px;
+    color: #8E8E8E;
+    display: flex;
+    gap: 8px;
+}
+
+.infoSalva,
+h1 h2 {
+    flex-direction: column;
+}
+
+.infoSocial {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    align-items: left;
+}
+
+
+.infoSocial a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 16px;
+    font-family: "Darker Grotesque", sans-serif;
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 300;
+}
+
+.buttonSocial {
+    transition: 0.7s;
+    overflow: hidden;
+}
+
+.buttonSocial a {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    margin-top: 3px;
+}
+
+.textSocial {
+    display: inline-block;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.buttonSocial:hover .textSocial {
+    animation: text 0.6s cubic-bezier(0, .7, .78, 1);
+}
+
+@keyframes text {
+    0% {
+        translate: 0 0;
+    }
+
+    50% {
+        translate: 0 -100%;
+    }
+
+    51% {
+        translate: 0 100%;
+    }
+
+    100% {
+        translate: 0 0;
+    }
+}
+
+.infoTags {
+    font-size: 64px;
+    line-height: 72px;
+    font-weight: 600;
+    margin-top: 64px;
+}
+
+.tagsUp {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.tagsUp h3 {
+    width: 50%;
+}
+
+.tagsDown {
+    display: flex;
+    justify-content: center;
+}
+
+.separator {
+    width: 96%;
+    margin: 64px auto;
+    height: 1px;
+    background-color: rgb(162, 162, 162, 0.10);
+}
+
+.work {
+    width: 96%;
+    margin: 64px auto;
+    display: flex;
+    gap: 16px;
+}
+
+.projectSmall {
+    width: 25%;
+}
+
+.projectMedium {
+    width: 50%;
+}
+
+.projectBig {
+    width: 100%;
+}
+
+.projectSmall,
+.projectMedium {
+    transition-property: margin-top;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.08;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+}
+
+.work img {
+    width: 100%;
+    object-fit: cover;
+    height: 448px;
+}
+
+.work h4 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    color: #8E8E8E;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+.work p {
+    font-family: "Darker Grotesque", sans-serif;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.work a {
+    text-decoration: none;
+    object-fit: cover;
+}
+
+.projectSmall:hover,
+.projectMedium:hover {
+    margin-top: -32px;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: rgba(162, 162, 162, 0.20);
+    transition: width .7s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .7s;
+}
+
+#aboutMe {
+    width: 96%;
+    margin: 32px auto;
+    display: flex;
+    gap: 128px;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+#aboutMe h4 {
+    font-family: "Darker Grotesque", sans-serif;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 64px;
+    font-weight: 400;
+}
+
+.textAboutMe {
+    width: 60%;
+}
+
+.textAboutMe p {
+    color: #8E8E8E;
+}
+
+.clients {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.clients img {
+    width: 30%;
+}
+
+.contentMarquee {
+    font-size: 124px;
+    font-weight: 600;
+}
+
+.colorMarquee {
+    color: #246BFD;
+}
+
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 120px;
+    margin-top: 64px;
+    overflow: hidden;
+}
+
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+#services {
+    width: 96%;
+    margin: 64px auto;
+}
+
+#services h3 {
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+#services h4 {
+    font-family: "Darker Grotesque", sans-serif;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 64px;
+}
+
+.containerServices {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.infoServices {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.columnDescription {
+    width: 50%;
+}
+
+.columnServices {
+    width: 40%;
+    margin-right: 5%;
+}
+
+.textServices {
+    flex-wrap: wrap;
+    min-width: 180px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    border-bottom: 1px solid rgba(162, 162, 162, 0.20);
+}
+
+.textServices p {
+    font-family: "Darker Grotesque", sans-serif;
+    color: #fff;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.bulletPoint {
+    height: 6px;
+    width: 6px;
+    background-color: #246BFD;
+    opacity: 50%;
+    transform: rotate(45deg);
+}
+
+#contact {
+    width: 96%;
+    margin: 64px auto;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+#contact p {
+    text-align: right;
+    margin: 32px 0 32px 0;
+}
+
+#contact h4 {
+    color: #8E8E8E;
+    margin-top: 124px;
+}
+
+.textSocial2 {
+    display: flex;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32px;
+    gap: 16px;
+    margin-top: 25px;
+}
+
+footer {
+    width: 96%;
+    margin: 0 auto;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32px;
+    text-transform: uppercase;
+    display: flex;
+    gap: 16px;
+    border-top: solid 1px rgb(162, 162, 162, 0.10);
+    padding: 16px 0;
+}
+
+.bold{
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        background-position: left center;
+    }
+
+    nav {
+        width: 100%;
+        margin: 8px auto;
+        justify-content: center;
+    }
+
+    .intro {
+        width: 90%;
+    }
+
+    .infoSalva {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .infoTags {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 600;
+        margin-top: 32px;
+    }
+
+    .work {
+        flex-direction: column;
+    }
+
+    .projectSmall,
+    .projectMedium,
+    .projectBig {
+        width: 100%;
+    }
+
+    .separator {
+        margin: 32px auto;
+    }
+
+    .work {
+        width: 90%;
+        margin: 32px auto;
+    }
+
+    .work img {
+        height: 208px;
+    }
+
+    #aboutMe {
+        width: 90%;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .textAboutMe,
+    .clients {
+        width: 100%;
+    }
+
+    #aboutMe h4 {
+        margin-bottom: 32px;
+    }
+
+    .textAboutMe p {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .contentMarquee {
+        font-size: 64px;
+    }
+
+    .track {
+        animation: marquee 16s linear infinite;
+    }
+
+    .marquee {
+        height: 64px;
+    }
+
+    #services {
+        width: 90%;
+        margin: 32px auto;
+    }
+
+    .textServices {
+        min-width: 160px;
+    }
+
+    .containerServices {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .columnServices {
+        width: 100%;
+    }
+
+    #contact {
+        width: 90%;
+        margin: 32px auto;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    #contact h4 {
+        margin-top: 64px;
+    }
+
+    .infoSocial {
+        flex-direction: column;
+    }
+
+    #contact p {
+        text-align: left;
+    }
+
+    footer {
+        width: 90%;
+    }
+
+}
